@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <title>Milo Unit 3 Project</title>
+    <div class="screen openingScreen">
+      <h2>You are taking a walk in the park. Easy right?</h2>
+      <button class="pathButton">Stay on the path</button>
+      <button class="offPathButton">Go off the path</button>
+    </div>
+
+    <div class="screen pathScreen">
+      <h2>As you stay on the path, you see a metal object in the distance and as it gets closer you relize that it is an alien spaceship! This is crazy! You wonder how nobody has noticed this yet. You decide to enter the spaceship</h2>
+      <button class="alienButton">Explore the ship</button>
+    </div>
+
+    <div class="screen offPathScreen">
+      <h2>You wander off and away from the park untile you find yourself in a forest. You see a house in the middle of the forest and the door is open, so you deside to go in. </h2>
+      <button class="houseButton">Continue</button>
+    </div>
+
+    <div class="screen alienScreen">
+      <h2>As you walk in the alien spaceship you notice that there is nobody there. Suddenly you feel a paralizing shock on your back. One of the aliens has shot you and the last thing you see before you died is its purple face staring at you! What is your reaction to that?<h2>
+<input type="text" onkeydown="myFunction()">
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Wow, I agree!";
+}
+</script>
+      </div>
+
+    <div class="screen houseScreen">
+      <h2>As you walk into the house you notice that the fireplace still has embers in it. "This must mean that someone has been here recently!" you conclude. Then you look up and see a massive spider the size of a car attached to the cieling. You try to run away, but it is too late, the spider falls on you and kills you. What is your reaction? </h2>
+
+      <input type="text" onkeydown="myFunction()">
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Wow, I agree!";
+}
+</script>
+    </div>
+
+    <div class="screen conclusionScreen">
+      <h2>The End</h2>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
